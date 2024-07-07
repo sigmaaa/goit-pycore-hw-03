@@ -1,4 +1,5 @@
-"""Python Datetime module supplies classes to work with date and time"""
+"""Module supplies functions to calculate days between current date and input, validates that input in ISO format"""
+
 from datetime import datetime
 
 
@@ -25,5 +26,3 @@ def get_days_from_today(date_text):
     """
     validate_iso_format(date_text)
     return (datetime.today() - datetime.fromisoformat(date_text)).days
-
-print(get_days_from_today("2024-01-22"))
