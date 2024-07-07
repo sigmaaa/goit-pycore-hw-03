@@ -2,10 +2,11 @@
 
 import random
 
+
 def get_numbers_ticket(min, max, quantity):
     """
     Returns random numbers in the range from min to max in the selected quantity.
-    
+
     :param min: Minimum value of the range (inclusive).
     :param max: Maximum value of the range (inclusive).
     :param quantity: Number of random values to generate.
@@ -24,7 +25,7 @@ def get_numbers_ticket(min, max, quantity):
 def validate_min_number(min):
     """
     Validates that min number is not less than 1 otherwise raises ValueError.
-    
+
     :param min: Minimum number to validate.
     :raises ValueError: If min is less than 1.
     """
@@ -39,7 +40,7 @@ def validate_min_number(min):
 def validate_max_number(max):
     """
     Validates that max number is not greater than 1000 otherwise raises ValueError.
-    
+
     :param max: Maximum number to validate.
     :raises ValueError: If max is greater than or equal to 1000.
     """
@@ -54,7 +55,7 @@ def validate_max_number(max):
 def validate_quantity(min, max, quantity):
     """
     Validates that quantity is between min and max.
-    
+
     :param min: Minimum value of the range.
     :param max: Maximum value of the range.
     :param quantity: Quantity to validate.
