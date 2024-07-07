@@ -9,7 +9,7 @@ def get_numbers_ticket(min, max, quantity):
     :param min: Minimum value of the range (inclusive).
     :param max: Maximum value of the range (inclusive).
     :param quantity: Number of random values to generate.
-    :return: Set of unique random numbers.
+    :return: Sorted list of unique random numbers.
     """
     validate_min_number(min)
     validate_max_number(max)
@@ -66,6 +66,3 @@ def validate_quantity(min, max, quantity):
                              quantity} isn't in the valid range of values beetwen {min} and {max}")
     except ValueError as exc:
         raise exc
-
-
-print(get_numbers_ticket(1, 36, 20))
